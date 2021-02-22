@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>User Page</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body>
+	<h1>USER LOGGED IN</h1>
+	<a th:href="@{'/logout-success'}"><h2>LOGOUT</h2></a>
+	
+	<body>
+
+    <h1>User profile</h1>
+    <div align="center">
+
+    <div th:object="${user}">
+       <p>First Name: <span th:text="*{firstName}">firstName</span>.</p>
+       <p>Last Name: <span th:text="*{lastName}">lastName</span>.</p>
+       <p>Email: <span th:text="*{email}">email</span>.</p>
+       <p>Age: <span th:text="*{age}">email</span>.</p>
+       <p>Nationality: <span th:text="*{nationality}">email</span>.</p>
+       <p>Mobile: <span th:text="*{mobile}">Mobile</span>.</p>
+       <p>Gender: <span th:text="*{gender}">email</span>.</p>
+       <p>Resume: <span th:file="*{resume}">resume</span>.</p>
+       <button type="button" class="btn btn-success"><a th:href="@{'/edit/' + ${user.id}}">Edit</a></button>
+       
+    </div>
+  	
+  	</div>
+   
+    
+  </body>
+	
+	
+	
+
+</body>
+</html>

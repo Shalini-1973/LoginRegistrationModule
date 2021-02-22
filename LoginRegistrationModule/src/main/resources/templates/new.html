@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<title>Create New Student</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<a th:href="@{'/logout-success'}"><h2>LOGOUT</h2></a>
+	<div align="center">
+		<h1>Update Profile</h1>
+		<br />
+		<div class="col-sm-4">
+			<form action="#" th:action="@{/save}" th:object="${user}"
+				method="post">
+
+			
+				<div alight="left">
+					<tr>
+						<label class="form-label">FirstName</label>
+						<td><input type="hidden" th:field="*{id}" /> 
+						<input
+							type="text" th:field="*{firstName}" class="form-control"
+							placeholder="first name" /></td>
+					</tr>
+				</div>
+
+				<div alight="left">
+					<tr>
+						<label class="form-label">LastName</label>
+						<td> 
+						<input
+							type="text" th:field="*{lastName}" class="form-control"
+							placeholder="Last name" /></td>
+					</tr>
+				</div>
+				
+				<div alight="left">
+					<tr>
+						<label class="form-label">Email</label>
+						<td> 
+						<input
+							type="text" th:field="*{email}" class="form-control"
+							placeholder="Email" /></td>
+					</tr>
+				</div>
+				<div alight="left">
+					<tr>
+						<label class="form-label">Mobile</label>
+						<td> 
+						<input
+							type="text" th:field="*{mobile}" class="form-control"
+							placeholder="Mobile" /></td>
+					</tr>
+				</div>
+				
+				<div alight="left">
+					<tr>
+						<label class="form-label">Gender</label>
+						<td> 
+						<input
+							type="text" th:field="*{gender}" class="form-control"
+							placeholder="gender" /></td>
+					</tr>
+				</div>
+				
+				<div alight="left">
+					<tr>
+						<label class="form-label">Nationality</label>
+						<td> 
+						<input
+							type="text" th:field="*{nationality}" class="form-control"
+							placeholder="Nationality" /></td>
+					</tr>
+				</div>	
+				
+				<div alight="left">
+					<tr>
+						<label class="form-label">Age</label>
+						<td> 
+						<input
+							type="text" th:field="*{age}" class="form-control"
+							placeholder="age" /></td>
+					</tr>
+				</div>
+				
+				<div alight="left">
+					<tr>
+						<label class="form-label">Upload Resume</label>
+						<td> 
+						<input
+							type="file" th:field="*{resume}" class="form-control"
+							placeholder="resume" /></td>
+					</tr>
+				</div>
+				
+				<br>
+				<tr>
+					<td colspan="2"><button type="submit" class="btn btn-info">Update</button>
+					</td>
+				</tr>
+				</table>
+			</form>
+		</div>
+</body>
+</html>

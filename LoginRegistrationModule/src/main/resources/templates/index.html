@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+ <title>Home</title>
+   	 <link href="" th:href="@{/css/home_style.css}"  rel="stylesheet" > 
+   	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+     <link href="" th:href="@{/css/bootstrap.css}" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+   
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	
+	<div class="bgimg" id="top">
+	
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+		
+			<div class="container">
+			
+				<a href="#top" class="navbar-brand text-warning font-weight-bold">Login Registration</a>
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar"> 
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse text-center" id="collapsenavbar">
+					<ul class="navbar-nav ml-auto">
+						
+						<li class="nav-item"> 
+							<a th:href="@{'/loginPage'}" class="nav-link text-white">LOGIN</a>
+						</li>
+						<li class="nav-item"> 
+							<a th:href="@{'/showReg'}" class="nav-link text-white">REGISTER</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		
+		
+		</nav>
+		
+		<div class="container text-center text-dark headerset">
+			<h1>Welcome To Our Login Registration</h1>
+			
+			
+		
+		</div>
+	
+	</div>
+	
+
+</body>
+</html>

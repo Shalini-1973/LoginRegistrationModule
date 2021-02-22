@@ -1,0 +1,63 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>login</title>
+   	 <link href="" th:href="@{/css/login.css}"  rel="stylesheet" >
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+<style type="text/css">
+header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url('static/image/flight1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+</style>
+
+
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="row clearfix">
+
+				<ul class="main-nav animated slideInDown">
+
+					<li><a th:href="@{'/showReg'}">Register</a></li>
+
+
+				</ul>
+		</nav>
+		<div class="signin">
+			<form action="#" th:action="@{/login}" method="post">
+				<h2 style="color: white">Log In Here</h2>
+				<br> <br> <input type="text" name="email"
+					placeholder="Username" required><br> <br> <input
+					type="password" name="password" placeholder="password" required><br>
+				<br>
+				<button class="btn btn-danger text-white btn-lg">
+					<b>LOG IN</b>
+				</button>
+				<br> <br> <br> <br>
+				<div id="container">
+					<a href="#"
+						style="margin-right: 0px; font-size: 16px; font-family: Tahoma, Geneva, sans-serif;">Reset
+						Password</a> <a href="#"
+						style="margin-right: 0px; font-size: 16px; font-family: Tahoma, Geneva, sans-serif;">Forgot
+						Password</a>
+				</div>
+				<br> <br> <br> Don't have account?<a href="showReg"
+					style="font-family: 'play', sans-serif;">&nbsp;Sign up</a>
+
+				<div th:if="${param.error}">
+                        <div class="alert alert-danger">
+                            Invalid username and password.
+                        </div>
+                    </div>
+			</form>
+		</div>
+	</header>
+</body>
+</html>

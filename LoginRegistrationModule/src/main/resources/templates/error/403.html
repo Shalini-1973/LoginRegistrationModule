@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+
+
+<div class="container">
+
+    <div class="starter-template">
+        <h1>403 - Access is denied</h1>
+        <div th:inline="text">Hello '[[${#httpServletRequest.remoteUser}]]', 
+                you have inserted the wrong credential.</div>
+                <a th:href="@{'/loginPage'}" class="nav-link text-white">BACK TO LOGIN</a>
+    </div>
+
+</div>
+<!-- /.container -->
+
+
+
+</body>
+</html>

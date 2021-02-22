@@ -1,0 +1,127 @@
+.bgimg{
+	background-image:url('../image/home.png');
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	width:100%;
+	height:650px;
+}
+
+.headerset{
+	padding-top:150px;
+	box-sizing:border-box;
+}
+.headerset h2{
+	font-size: 42px;
+}
+
+.headerset h1{
+	font-size: 82px;
+	font-weight:bold;
+}
+
+
+
+
+
+
+.ourservices{
+	padding:100px 0px 60px;
+	height:700px;
+}
+
+.ourservices h1{
+	font-size:50px;
+	font-weight:bold;
+}
+
+.rowsetting{
+	margin:80px 0px !important;
+}
+
+.imgsetting{
+	border-radius:50px;
+	height:100px;
+	width:100px;
+}
+
+.fa-leaf{
+	margin-top:20px;
+}
+
+.fa-desktop{
+	margin-top:25px;
+}
+
+.fa-lock{
+	margin-top:22px;
+}
+
+.rowsetting p{
+	padding:10px;
+	color:#585858 !important;
+}
+
+.rowsetting h2{
+	margin-top:20px;
+	font-weight:bold;
+}
+
+
+
+
+
+
+
+
+.gallery{
+	height:1100px;
+	width:100%;
+	padding:100px 0px 50px;
+}
+
+.gallery h1{
+	font-size:50px;
+	font-weight:bold;
+}
+
+.card{
+	margin-top:40px;
+}
+
+
+
+
+
+
+
+
+.ourteam{
+	height:700px;
+	padding:100px 0px 60px;
+	width:100%;
+}
+
+.ourteam h1{
+	font-size:50px;
+	font-weight:bold;
+}
+
+.teamsetting{
+	margin-top:70px !important;
+}
+
+
+.footer{
+	height:50px
+}
+
+.footer h6{
+	line-height:50px
+}
+
+
+
+
+
+
+

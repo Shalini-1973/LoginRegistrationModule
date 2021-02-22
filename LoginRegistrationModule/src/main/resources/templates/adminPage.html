@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin Page</title>
+
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<h1>ADMIN LOGGED IN</h1>
+	<a th:href="@{'/logout-success'}"><h2>LOGOUT</h2></a>
+	
+	
+	
+	<div>
+		<h2>
+			<b>Result users</b>
+		</h2>
+		<tr>
+			<div class="col-sm-5" align="center">
+				<div class="panel-body" align="center">
+					<table class="table">
+						<thead class="thead-dark">
+							<tr>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Email</th>
+								<th>Edit</th>
+								<th>Delete</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr th:each="user : ${listUser}">
+								<td th:text="${user.firstName}">First Name</td>
+								<td th:text="${user.lastName}">Last Name</td>
+								<td th:text="${user.email}">Email</td>
+								<td><a th:href="@{'/edit/' + ${user.id}}">Edit</a></td>
+								<td><a th:href="@{'/delete/' + ${user.id}}">Delete</a></td>
+							</tr>
+
+						</tbody>
+					</table>
+
+				</div>
+
+			</div>
+
+		</tr>
+
+		</tbody>
+		</table>
+		<div>
+	
+
+</body>
+</html>

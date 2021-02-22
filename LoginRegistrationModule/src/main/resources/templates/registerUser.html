@@ -1,0 +1,51 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>untitled document</title>
+ <link href="" th:href="@{/css/login.css}"  rel="stylesheet" >
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+<style type="text/css">
+header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url('static/image/home.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+</style>
+
+
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="row clearfix">
+
+				<ul class="main-nav animated slideInDown">
+					
+					<li><a href="loginPage">log In</a></li>
+
+
+				</ul>
+		</nav>
+		<div class="signin">
+			<form action="#" th:action="@{/registerUser}" method="post">
+				<h2 style="color: white">Registration</h2><br><br>
+				<input name="firstName" placeholder="First Name" type="text"><br>
+				<input name="lastName" placeholder="Last Name"  type="text"><br>
+				<input name="email" placeholder="E-Mail Address" type="text"><br>
+				<input name="password" placeholder="Password" type="password"><br>
+				<input name="confirm_password" placeholder="confirmPassword" type="password">
+				
+				<br><br> <button class="btn btn-danger text-white btn-lg"><b>Register</b></button><br> <br>
+				
+				
+				<br> Don't have account?<a href="loginPage"
+					style="font-family: 'play', sans-serif;">&nbsp;Sign In</a>
+			</form>
+		</div>
+	</header>
+</body>
+</html>
